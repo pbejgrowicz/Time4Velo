@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46B5F2078CDA562A43F7C095 /* Pods_Time4Velo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C68C0787120F438841CB16A /* Pods_Time4Velo.framework */; };
 		5E72682D1F1904AB00FA97E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E72682C1F1904AB00FA97E5 /* AppDelegate.swift */; };
 		5E72682F1F1904AB00FA97E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E72682E1F1904AB00FA97E5 /* ViewController.swift */; };
 		5E7268321F1904AB00FA97E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E7268301F1904AB00FA97E5 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0091F4AE7129EA5DB54513AF /* Pods-Time4Velo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Time4Velo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Time4Velo/Pods-Time4Velo.release.xcconfig"; sourceTree = "<group>"; };
 		5E7268291F1904AB00FA97E5 /* Time4Velo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Time4Velo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E72682C1F1904AB00FA97E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E72682E1F1904AB00FA97E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		5E7268331F1904AB00FA97E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E7268361F1904AB00FA97E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E7268381F1904AB00FA97E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C68C0787120F438841CB16A /* Pods_Time4Velo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Time4Velo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0C5F5C10F7617A1550194EF /* Pods-Time4Velo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Time4Velo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Time4Velo/Pods-Time4Velo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46B5F2078CDA562A43F7C095 /* Pods_Time4Velo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5435C00C1775063912779AD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C68C0787120F438841CB16A /* Pods_Time4Velo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5E7268201F1904AB00FA97E5 = {
 			isa = PBXGroup;
 			children = (
 				5E72682B1F1904AB00FA97E5 /* Time4Velo */,
 				5E72682A1F1904AB00FA97E5 /* Products */,
+				DFBDE9C1BD4BFB22AE6B2AF5 /* Pods */,
+				5435C00C1775063912779AD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +69,111 @@
 		5E72682B1F1904AB00FA97E5 /* Time4Velo */ = {
 			isa = PBXGroup;
 			children = (
-				5E72682C1F1904AB00FA97E5 /* AppDelegate.swift */,
-				5E72682E1F1904AB00FA97E5 /* ViewController.swift */,
-				5E7268301F1904AB00FA97E5 /* Main.storyboard */,
-				5E7268331F1904AB00FA97E5 /* Assets.xcassets */,
-				5E7268351F1904AB00FA97E5 /* LaunchScreen.storyboard */,
-				5E7268381F1904AB00FA97E5 /* Info.plist */,
+				5EF8BA161F1CD8D900E0E1F3 /* Main */,
+				5EF8BA171F1CD8E200E0E1F3 /* Resources */,
+				5EF8BA181F1CD8EA00E0E1F3 /* Extension */,
+				5EF8BA1B1F1CD93F00E0E1F3 /* Tools */,
+				5EF8BA1C1F1CD94B00E0E1F3 /* Model */,
+				5EF8BA1D1F1CD95400E0E1F3 /* Service */,
+				5EF8BA1E1F1CD96B00E0E1F3 /* Custom elements */,
+				5EF8BA1F1F1CD97C00E0E1F3 /* Modules */,
+				5EF8BA211F1CD9AA00E0E1F3 /* Protocols */,
 			);
 			path = Time4Velo;
+			sourceTree = "<group>";
+		};
+		5EF8BA161F1CD8D900E0E1F3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5E72682C1F1904AB00FA97E5 /* AppDelegate.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		5EF8BA171F1CD8E200E0E1F3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5EF8BA191F1CD91000E0E1F3 /* Splash Screen files */,
+				5E7268331F1904AB00FA97E5 /* Assets.xcassets */,
+				5E7268381F1904AB00FA97E5 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5EF8BA181F1CD8EA00E0E1F3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		5EF8BA191F1CD91000E0E1F3 /* Splash Screen files */ = {
+			isa = PBXGroup;
+			children = (
+				5E7268351F1904AB00FA97E5 /* LaunchScreen.storyboard */,
+			);
+			name = "Splash Screen files";
+			sourceTree = "<group>";
+		};
+		5EF8BA1B1F1CD93F00E0E1F3 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		5EF8BA1C1F1CD94B00E0E1F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5EF8BA1D1F1CD95400E0E1F3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		5EF8BA1E1F1CD96B00E0E1F3 /* Custom elements */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Custom elements";
+			sourceTree = "<group>";
+		};
+		5EF8BA1F1F1CD97C00E0E1F3 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5EF8BA201F1CD99000E0E1F3 /* Main */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		5EF8BA201F1CD99000E0E1F3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5E72682E1F1904AB00FA97E5 /* ViewController.swift */,
+				5E7268301F1904AB00FA97E5 /* Main.storyboard */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		5EF8BA211F1CD9AA00E0E1F3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		DFBDE9C1BD4BFB22AE6B2AF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0C5F5C10F7617A1550194EF /* Pods-Time4Velo.debug.xcconfig */,
+				0091F4AE7129EA5DB54513AF /* Pods-Time4Velo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +183,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E72683B1F1904AB00FA97E5 /* Build configuration list for PBXNativeTarget "Time4Velo" */;
 			buildPhases = (
+				94AE09D9FA6179025AF34C40 /* [CP] Check Pods Manifest.lock */,
 				5E7268251F1904AB00FA97E5 /* Sources */,
 				5E7268261F1904AB00FA97E5 /* Frameworks */,
 				5E7268271F1904AB00FA97E5 /* Resources */,
+				9E535B0136656983BBA0F3BB /* [CP] Embed Pods Frameworks */,
+				18786AFD3D262AFB794AB9CE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +246,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18786AFD3D262AFB794AB9CE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Time4Velo/Pods-Time4Velo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94AE09D9FA6179025AF34C40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9E535B0136656983BBA0F3BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Time4Velo/Pods-Time4Velo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5E7268251F1904AB00FA97E5 /* Sources */ = {
@@ -259,6 +422,7 @@
 		};
 		5E72683C1F1904AB00FA97E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0C5F5C10F7617A1550194EF /* Pods-Time4Velo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UA7TVN582J;
@@ -272,6 +436,7 @@
 		};
 		5E72683D1F1904AB00FA97E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0091F4AE7129EA5DB54513AF /* Pods-Time4Velo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UA7TVN582J;
@@ -302,6 +467,7 @@
 				5E72683D1F1904AB00FA97E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,6 +8,7 @@
 
 import UIKit
 import RxSwift
+import RxCocoa
 
 class LoginViewController: UIViewController {
     
@@ -15,9 +16,31 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     
+    let bag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setup()
+        bindValues()
+    }
+}
 
-         navigationController?.setNavigationBarHidden(true, animated: false)
+extension LoginViewController {
+    
+    func setup() {
+        navigationController?.setNavigationBarHidden(true, animated: false)
+        loginTextField.placeholder = "Login"
+        passwordTextField.placeholder = "Password"
+        passwordTextField.isSecureTextEntry = true
+    }
+    
+    func bindValues() {
+        loginButton.rx.tap
+            .asObservable()
+            .subscribe(onNext: { _ in
+                MainViewController.sharedInstance.changeToControllerType(.tabBar)
+            })
+            .disposed(by: bag)
     }
 }

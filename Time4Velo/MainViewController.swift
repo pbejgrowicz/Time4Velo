@@ -42,5 +42,28 @@ class MainViewController: UIViewController {
         rootViewController.didMove(toParentViewController: self.parent)
         currentVC = rootViewController
     }
+    
+    func changeToControllerType(_ type: ViewControllerType) {
+        let newVC = ViewControllerFactory.viewControllerWithType(type)
+        
+        currentVC.willMove(toParentViewController: nil)
+        addChildViewController(newVC)
+        
+        view.addSubview(newVC.view)
+        newVC.view.snp.makeConstraints { make in
+            make.edges.equalTo(self.view)
+        }
+        newVC.view.layoutIfNeeded()
+        
+        newVC.view.alpha = 0.0
+        UIView.animate(withDuration: 0.25, delay: 0, options: .curveEaseInOut, animations: {
+            newVC.view.alpha = 1
+        }) { _ in
+            self.currentVC.view.removeFromSuperview()
+            self.currentVC.removeFromParentViewController()
+            newVC.didMove(toParentViewController: self)
+            self.currentVC = newVC
+        }
+    }
 }
 

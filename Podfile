@@ -8,6 +8,7 @@ target 'Time4Velo' do
 	pod 'Parse' 
 	pod 'RxSwift'
 	pod 'SnapKit'
+	pod 'RxCocoa'
 
   # Pods for Time4Velo
 

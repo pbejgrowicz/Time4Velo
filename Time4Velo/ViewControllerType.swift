@@ -14,6 +14,9 @@ enum ViewControllerType: String {
     case forgotPassword = "ForgotPasswordView"
     case register = "RegisterView"
     case tabBar = "TabBarNavigation"
+    case activity = "ActivityView"
+    case history = "HistoryView"
+    case profile = "ProfileView"
     
     var storyboardName: String {
         switch self {
@@ -27,6 +30,12 @@ enum ViewControllerType: String {
             return "Register"
         case .tabBar:
             return "TabBar"
+        case .activity:
+            return "Activity"
+        case .history:
+            return "History"
+        case .profile:
+            return "Profile"
         }
     }
 }

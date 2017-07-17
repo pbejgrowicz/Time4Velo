@@ -27,6 +27,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Parse.initialize(with: configuration)
         
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = MainViewController.sharedInstance
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 

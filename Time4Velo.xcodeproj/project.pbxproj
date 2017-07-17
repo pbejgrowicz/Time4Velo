@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		46B5F2078CDA562A43F7C095 /* Pods_Time4Velo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C68C0787120F438841CB16A /* Pods_Time4Velo.framework */; };
 		5E72682D1F1904AB00FA97E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E72682C1F1904AB00FA97E5 /* AppDelegate.swift */; };
-		5E72682F1F1904AB00FA97E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E72682E1F1904AB00FA97E5 /* ViewController.swift */; };
+		5E72682F1F1904AB00FA97E5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E72682E1F1904AB00FA97E5 /* MainViewController.swift */; };
 		5E7268321F1904AB00FA97E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E7268301F1904AB00FA97E5 /* Main.storyboard */; };
 		5E7268341F1904AB00FA97E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E7268331F1904AB00FA97E5 /* Assets.xcassets */; };
 		5E7268371F1904AB00FA97E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E7268351F1904AB00FA97E5 /* LaunchScreen.storyboard */; };
+		5EF8BA231F1CDD3600E0E1F3 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF8BA221F1CDD3600E0E1F3 /* ViewControllerFactory.swift */; };
+		5EF8BA261F1CDDCD00E0E1F3 /* ViewControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF8BA251F1CDDCD00E0E1F3 /* ViewControllerType.swift */; };
+		5EF8BA291F1CF3F200E0E1F3 /* UserDefaultValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF8BA281F1CF3F200E0E1F3 /* UserDefaultValues.swift */; };
+		5EF8BA2C1F1CF50A00E0E1F3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF8BA2B1F1CF50A00E0E1F3 /* LoginViewController.swift */; };
+		5EF8BA2E1F1CF84000E0E1F3 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EF8BA2D1F1CF84000E0E1F3 /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0091F4AE7129EA5DB54513AF /* Pods-Time4Velo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Time4Velo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Time4Velo/Pods-Time4Velo.release.xcconfig"; sourceTree = "<group>"; };
 		5E7268291F1904AB00FA97E5 /* Time4Velo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Time4Velo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E72682C1F1904AB00FA97E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5E72682E1F1904AB00FA97E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5E72682E1F1904AB00FA97E5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5E7268311F1904AB00FA97E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E7268331F1904AB00FA97E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E7268361F1904AB00FA97E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E7268381F1904AB00FA97E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EF8BA221F1CDD3600E0E1F3 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		5EF8BA251F1CDDCD00E0E1F3 /* ViewControllerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerType.swift; sourceTree = "<group>"; };
+		5EF8BA281F1CF3F200E0E1F3 /* UserDefaultValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultValues.swift; sourceTree = "<group>"; };
+		5EF8BA2B1F1CF50A00E0E1F3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5EF8BA2D1F1CF84000E0E1F3 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		8C68C0787120F438841CB16A /* Pods_Time4Velo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Time4Velo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C5F5C10F7617A1550194EF /* Pods-Time4Velo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Time4Velo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Time4Velo/Pods-Time4Velo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +82,7 @@
 				5EF8BA161F1CD8D900E0E1F3 /* Main */,
 				5EF8BA171F1CD8E200E0E1F3 /* Resources */,
 				5EF8BA181F1CD8EA00E0E1F3 /* Extension */,
+				5EF8BA241F1CDDA000E0E1F3 /* Enum */,
 				5EF8BA1B1F1CD93F00E0E1F3 /* Tools */,
 				5EF8BA1C1F1CD94B00E0E1F3 /* Model */,
 				5EF8BA1D1F1CD95400E0E1F3 /* Service */,
@@ -118,6 +129,7 @@
 		5EF8BA1B1F1CD93F00E0E1F3 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				5EF8BA221F1CDD3600E0E1F3 /* ViewControllerFactory.swift */,
 			);
 			name = Tools;
 			sourceTree = "<group>";
@@ -132,6 +144,7 @@
 		5EF8BA1D1F1CD95400E0E1F3 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				5EF8BA271F1CF3DE00E0E1F3 /* Token */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -147,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				5EF8BA201F1CD99000E0E1F3 /* Main */,
+				5EF8BA2A1F1CF4A100E0E1F3 /* Login */,
 			);
 			name = Modules;
 			sourceTree = "<group>";
@@ -154,7 +168,7 @@
 		5EF8BA201F1CD99000E0E1F3 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				5E72682E1F1904AB00FA97E5 /* ViewController.swift */,
+				5E72682E1F1904AB00FA97E5 /* MainViewController.swift */,
 				5E7268301F1904AB00FA97E5 /* Main.storyboard */,
 			);
 			name = Main;
@@ -165,6 +179,31 @@
 			children = (
 			);
 			name = Protocols;
+			sourceTree = "<group>";
+		};
+		5EF8BA241F1CDDA000E0E1F3 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				5EF8BA251F1CDDCD00E0E1F3 /* ViewControllerType.swift */,
+			);
+			name = Enum;
+			sourceTree = "<group>";
+		};
+		5EF8BA271F1CF3DE00E0E1F3 /* Token */ = {
+			isa = PBXGroup;
+			children = (
+				5EF8BA281F1CF3F200E0E1F3 /* UserDefaultValues.swift */,
+			);
+			name = Token;
+			sourceTree = "<group>";
+		};
+		5EF8BA2A1F1CF4A100E0E1F3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5EF8BA2B1F1CF50A00E0E1F3 /* LoginViewController.swift */,
+				5EF8BA2D1F1CF84000E0E1F3 /* Login.storyboard */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 		DFBDE9C1BD4BFB22AE6B2AF5 /* Pods */ = {
@@ -239,6 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EF8BA2E1F1CF84000E0E1F3 /* Login.storyboard in Resources */,
 				5E7268371F1904AB00FA97E5 /* LaunchScreen.storyboard in Resources */,
 				5E7268341F1904AB00FA97E5 /* Assets.xcassets in Resources */,
 				5E7268321F1904AB00FA97E5 /* Main.storyboard in Resources */,
@@ -300,7 +340,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E72682F1F1904AB00FA97E5 /* ViewController.swift in Sources */,
+				5EF8BA2C1F1CF50A00E0E1F3 /* LoginViewController.swift in Sources */,
+				5EF8BA261F1CDDCD00E0E1F3 /* ViewControllerType.swift in Sources */,
+				5EF8BA231F1CDD3600E0E1F3 /* ViewControllerFactory.swift in Sources */,
+				5E72682F1F1904AB00FA97E5 /* MainViewController.swift in Sources */,
+				5EF8BA291F1CF3F200E0E1F3 /* UserDefaultValues.swift in Sources */,
 				5E72682D1F1904AB00FA97E5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,6 +6,8 @@ target 'Time4Velo' do
   use_frameworks!
 
 	pod 'Parse' 
+	pod 'RxSwift'
+	pod 'SnapKit'
 
   # Pods for Time4Velo
 

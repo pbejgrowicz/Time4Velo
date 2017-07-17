@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5jH-no-IbF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="iGC-g4-UK4">
+            <objects>
+                <viewController id="XzS-8n-bxs" customClass="LoginViewController" customModule="Time4Velo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7k-lr-RjB"/>
+                        <viewControllerLayoutGuide type="bottom" id="q01-nC-y7k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NfO-By-NqZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tvQ-Xl-7so">
+                                <rect key="frame" x="66" y="373" width="244" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="244" id="8py-pX-HN3"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KGP-0O-I2L">
+                                <rect key="frame" x="66" y="431" width="244" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="244" id="ycF-of-zRx"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tds-wx-Shk">
+                                <rect key="frame" x="164.5" y="503" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="hRC-hS-4h1"/>
+                                </constraints>
+                                <state key="normal" title="LOGIN">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tds-wx-Shk" firstAttribute="centerX" secondItem="NfO-By-NqZ" secondAttribute="centerX" id="G1P-Mn-zIO"/>
+                            <constraint firstAttribute="bottom" secondItem="KGP-0O-I2L" secondAttribute="bottom" constant="206" id="P0h-7q-AzD"/>
+                            <constraint firstItem="KGP-0O-I2L" firstAttribute="centerX" secondItem="NfO-By-NqZ" secondAttribute="centerX" id="P1G-fo-CCd"/>
+                            <constraint firstItem="q01-nC-y7k" firstAttribute="top" secondItem="Tds-wx-Shk" secondAttribute="bottom" constant="134" id="Quq-Ex-Ukl"/>
+                            <constraint firstItem="Tds-wx-Shk" firstAttribute="top" secondItem="KGP-0O-I2L" secondAttribute="bottom" constant="42" id="RNj-D2-v6q"/>
+                            <constraint firstItem="KGP-0O-I2L" firstAttribute="top" secondItem="tvQ-Xl-7so" secondAttribute="bottom" constant="28" id="kzm-DW-Tql"/>
+                            <constraint firstItem="tvQ-Xl-7so" firstAttribute="centerX" secondItem="NfO-By-NqZ" secondAttribute="centerX" id="tw7-6g-5y7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZHT-lR-GFd"/>
+                    <connections>
+                        <outlet property="loginButton" destination="Tds-wx-Shk" id="ily-8M-0Me"/>
+                        <outlet property="loginTextField" destination="tvQ-Xl-7so" id="hCc-JF-8vg"/>
+                        <outlet property="passwordTextField" destination="KGP-0O-I2L" id="ue1-Pi-Dzm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jNA-GD-Qb5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1119.2" y="182.15892053973016"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CrQ-Uf-U6p">
+            <objects>
+                <navigationController storyboardIdentifier="LoginNavigationControllerStoryboardIdentifier" automaticallyAdjustsScrollViewInsets="NO" id="5jH-no-IbF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BDN-ri-YvM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XzS-8n-bxs" kind="relationship" relationship="rootViewController" id="GN9-v6-4Fq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ItS-U1-7xj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="180" y="182.15892053973016"/>
+        </scene>
+    </scenes>
+</document>

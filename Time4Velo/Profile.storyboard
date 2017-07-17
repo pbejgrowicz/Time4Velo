@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="Vp5-OB-gLy">
             <objects>
-                <viewController storyboardIdentifier="ProfileViewControllerStoryboardIdentifier" id="V95-l4-dCB" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewControllerStoryboardIdentifier" id="V95-l4-dCB" customClass="ProfileViewController" customModule="Time4Velo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AhN-5e-GfD"/>
                         <viewControllerLayoutGuide type="bottom" id="8kc-vN-k0d"/>

@@ -24,6 +24,9 @@
 		5EF8BA3A1F1D0B6100E0E1F3 /* Activity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EF8BA391F1D0B6100E0E1F3 /* Activity.storyboard */; };
 		5EF8BA3C1F1D0BB200E0E1F3 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EF8BA3B1F1D0BB200E0E1F3 /* History.storyboard */; };
 		5EF8BA3E1F1D0BBC00E0E1F3 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EF8BA3D1F1D0BBC00E0E1F3 /* Profile.storyboard */; };
+		5EF8BA401F1D0F0000E0E1F3 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF8BA3F1F1D0F0000E0E1F3 /* ActivityViewController.swift */; };
+		5EF8BA421F1D0F0D00E0E1F3 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF8BA411F1D0F0D00E0E1F3 /* HistoryViewController.swift */; };
+		5EF8BA441F1D0F1C00E0E1F3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF8BA431F1D0F1C00E0E1F3 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		5EF8BA391F1D0B6100E0E1F3 /* Activity.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Activity.storyboard; sourceTree = "<group>"; };
 		5EF8BA3B1F1D0BB200E0E1F3 /* History.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
 		5EF8BA3D1F1D0BBC00E0E1F3 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		5EF8BA3F1F1D0F0000E0E1F3 /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		5EF8BA411F1D0F0D00E0E1F3 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		5EF8BA431F1D0F1C00E0E1F3 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		8C68C0787120F438841CB16A /* Pods_Time4Velo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Time4Velo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C5F5C10F7617A1550194EF /* Pods-Time4Velo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Time4Velo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Time4Velo/Pods-Time4Velo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -236,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				5EF8BA3D1F1D0BBC00E0E1F3 /* Profile.storyboard */,
+				5EF8BA431F1D0F1C00E0E1F3 /* ProfileViewController.swift */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -244,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				5EF8BA3B1F1D0BB200E0E1F3 /* History.storyboard */,
+				5EF8BA411F1D0F0D00E0E1F3 /* HistoryViewController.swift */,
 			);
 			name = History;
 			sourceTree = "<group>";
@@ -252,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				5EF8BA391F1D0B6100E0E1F3 /* Activity.storyboard */,
+				5EF8BA3F1F1D0F0000E0E1F3 /* ActivityViewController.swift */,
 			);
 			name = Activity;
 			sourceTree = "<group>";
@@ -397,7 +406,10 @@
 				5EF8BA2C1F1CF50A00E0E1F3 /* LoginViewController.swift in Sources */,
 				5EF8BA261F1CDDCD00E0E1F3 /* ViewControllerType.swift in Sources */,
 				5EF8BA231F1CDD3600E0E1F3 /* ViewControllerFactory.swift in Sources */,
+				5EF8BA421F1D0F0D00E0E1F3 /* HistoryViewController.swift in Sources */,
 				5E72682F1F1904AB00FA97E5 /* MainViewController.swift in Sources */,
+				5EF8BA401F1D0F0000E0E1F3 /* ActivityViewController.swift in Sources */,
+				5EF8BA441F1D0F1C00E0E1F3 /* ProfileViewController.swift in Sources */,
 				5EF8BA311F1CFE1400E0E1F3 /* TabBarViewController.swift in Sources */,
 				5EF8BA291F1CF3F200E0E1F3 /* UserDefaultValues.swift in Sources */,
 				5EF8BA331F1CFE5800E0E1F3 /* TabBarViewControllerType.swift in Sources */,

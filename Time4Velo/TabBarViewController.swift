@@ -23,6 +23,12 @@ class TabBarViewController: UITabBarController {
     }
 }
 
+extension TabBarViewController: UITabBarControllerDelegate {
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        return true
+    }
+}
+
 private extension TabBarViewController {
     func prepareControllers() {
         var controllers: [UIViewController] = []

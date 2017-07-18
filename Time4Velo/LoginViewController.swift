@@ -15,6 +15,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var registerButton: UIButton!
     
     let bag = DisposeBag()
     
@@ -40,6 +41,14 @@ extension LoginViewController {
             .asObservable()
             .subscribe(onNext: { _ in
                 MainViewController.sharedInstance.changeToControllerType(.tabBar)
+            })
+            .disposed(by: bag)
+        
+        registerButton.rx.tap
+            .asObservable()
+            .subscribe(onNext: { _ in
+                let vc = ViewControllerFactory.viewControllerWithType(.register)
+                self.navigationController?.pushViewController(vc, animated: true)
             })
             .disposed(by: bag)
     }

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Parse
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,14 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         //DEV DATABASE
-        //Init Parse
-        let configuration = ParseClientConfiguration {
-            $0.applicationId = "dSHlKcKedNjouiTjkwKrVbVbJHb6YBjNuPtGskeV"
-            $0.clientKey = "UCJ8aistMsU0KgmqbgiwYZD7hDcOuo7QjBAaHMXw"
-            $0.server = "https://parseapi.back4app.com"
-        }
-        
-        Parse.initialize(with: configuration)
+        FirebaseApp.configure()
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = MainViewController.sharedInstance

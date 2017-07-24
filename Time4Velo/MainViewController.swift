@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Parse
 import SnapKit
 import RxSwift
 
@@ -27,6 +26,11 @@ class MainViewController: UIViewController {
         } else {
             prepareRootController(rootViewController: ViewControllerFactory.viewControllerWithType(.login))
         }
+    }
+    
+    func logout() {
+        UserDefaultsService.removeAllValues()
+        MainViewController.sharedInstance.changeToControllerType(.login)
     }
     
     private func prepareRootController(rootViewController: UIViewController) {

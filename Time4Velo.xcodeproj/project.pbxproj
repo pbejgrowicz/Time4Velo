@@ -30,6 +30,7 @@
 		5EF8BA471F1D11D000E0E1F3 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EF8BA461F1D11D000E0E1F3 /* Register.storyboard */; };
 		5EF8BA491F1D11EB00E0E1F3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF8BA481F1D11EB00E0E1F3 /* RegisterViewController.swift */; };
 		5EF8BA4B1F1F80D600E0E1F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EF8BA4A1F1F80D600E0E1F3 /* GoogleService-Info.plist */; };
+		5EF8BA4D1F26040900E0E1F3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EF8BA4C1F26040900E0E1F3 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		5EF8BA461F1D11D000E0E1F3 /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		5EF8BA481F1D11EB00E0E1F3 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		5EF8BA4A1F1F80D600E0E1F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5EF8BA4C1F26040900E0E1F3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		8C68C0787120F438841CB16A /* Pods_Time4Velo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Time4Velo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C5F5C10F7617A1550194EF /* Pods-Time4Velo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Time4Velo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Time4Velo/Pods-Time4Velo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EF8BA4D1F26040900E0E1F3 /* MapKit.framework in Frameworks */,
 				46B5F2078CDA562A43F7C095 /* Pods_Time4Velo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,6 +80,7 @@
 		5435C00C1775063912779AD7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5EF8BA4C1F26040900E0E1F3 /* MapKit.framework */,
 				8C68C0787120F438841CB16A /* Pods_Time4Velo.framework */,
 			);
 			name = Frameworks;
@@ -328,6 +332,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = UA7TVN582J;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};

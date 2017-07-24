@@ -6,10 +6,16 @@
 //  Copyright © 2017 Patryk Bejgrowicz. All rights reserved.
 //
 
-import UIKit
+import RxCocoa
+import RxSwift
+import MapKit
+import CoreLocation
 
 class ActivityViewController: UIViewController {
 
+    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var recordButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

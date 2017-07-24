@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,9 +21,37 @@
                     <view key="view" contentMode="scaleToFill" id="FEO-SR-BPl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="tl3-RC-0vK">
+                                <rect key="frame" x="0.0" y="64" width="375" height="438"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8G-gy-fUt">
+                                <rect key="frame" x="115" y="542" width="144" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="OzA-nH-pqZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Ride">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g8G-gy-fUt" firstAttribute="top" secondItem="tl3-RC-0vK" secondAttribute="bottom" constant="40" id="EeC-25-T2l"/>
+                            <constraint firstItem="2pd-o8-xdV" firstAttribute="top" secondItem="g8G-gy-fUt" secondAttribute="bottom" constant="80" id="S1e-fk-FhF"/>
+                            <constraint firstItem="tl3-RC-0vK" firstAttribute="top" secondItem="waZ-9D-b1q" secondAttribute="bottom" id="afc-z4-aj8"/>
+                            <constraint firstItem="tl3-RC-0vK" firstAttribute="leading" secondItem="FEO-SR-BPl" secondAttribute="leading" id="byi-lc-dOw"/>
+                            <constraint firstItem="g8G-gy-fUt" firstAttribute="leading" secondItem="FEO-SR-BPl" secondAttribute="leadingMargin" constant="99" id="eJ9-Fq-iHG"/>
+                            <constraint firstAttribute="trailing" secondItem="tl3-RC-0vK" secondAttribute="trailing" id="er7-zg-dDf"/>
+                            <constraint firstItem="g8G-gy-fUt" firstAttribute="centerX" secondItem="tl3-RC-0vK" secondAttribute="centerX" id="ykW-KM-bMB"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MCK-yF-LEU"/>
+                    <connections>
+                        <outlet property="mapView" destination="tl3-RC-0vK" id="Lv0-22-tVQ"/>
+                        <outlet property="recordButton" destination="g8G-gy-fUt" id="C15-Lh-MYH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jdn-qT-ftG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

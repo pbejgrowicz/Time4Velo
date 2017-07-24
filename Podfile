@@ -10,6 +10,7 @@ target 'Time4Velo' do
 	pod 'RxSwift'
 	pod 'SnapKit'
 	pod 'RxCocoa'
+	pod 'SnapKit'
 
   # Pods for Time4Velo
 
